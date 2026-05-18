@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navyDark"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        app:theme="@style/WhiteToolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <!-- Hero Header Card with Hands Holding Gold Image -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/navyDark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Text side -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gold Zakat"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calculator"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/gold"
+                            android:layout_marginBottom="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimate your zakat on gold easily"
+                            android:textSize="12sp"
+                            android:textColor="#99FFFFFF"/>
+                    </LinearLayout>
+
+                    <!-- Hands holding gold image -->
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_hands_gold"
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="12dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Input Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Card Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/gold"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enter Gold Details"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <!-- Gold Weight -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gold Weight (grams)"
+                        android:textSize="13sp"
+                        android:textColor="@color/textMedium"
+                        android:layout_marginBottom="6dp"/>
+
+                    <EditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g.  100"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/input_background"
+                        android:padding="14dp"
+                        android:layout_marginBottom="18dp"
+                        android:textColor="@color/textDark"
+                        android:textColorHint="@color/textHint"
+                        android:textSize="15sp"/>
+
+                    <!-- Gold Type -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gold Type"
+                        android:textSize="13sp"
+                        android:textColor="@color/textMedium"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep = nisab 85g   ·   Wear = nisab 200g"
+                        android:textSize="11sp"
+                        android:textColor="@color/textHint"
+                        android:layout_marginBottom="10dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgGoldType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="18dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_card"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:layout_marginRight="6dp">
+
+                            <RadioButton
+                                android:id="@+id/rbKeep"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/navyDark"
+                                android:text="Keep"
+                                android:textColor="@color/textDark"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_card"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="6dp">
+
+                            <RadioButton
+                                android:id="@+id/rbWear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/navyDark"
+                                android:text="Wear"
+                                android:textColor="@color/textDark"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </RadioGroup>
+
+                    <!-- Gold Value -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current Gold Value per Gram (RM)"
+                        android:textSize="13sp"
+                        android:textColor="@color/textMedium"
+                        android:layout_marginBottom="6dp"/>
+
+                    <EditText
+                        android:id="@+id/etGoldValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="e.g.  520"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/input_background"
+                        android:padding="14dp"
+                        android:layout_marginBottom="24dp"
+                        android:textColor="@color/textDark"
+                        android:textColorHint="@color/textHint"
+                        android:textSize="15sp"/>
+
+                    <!-- Calculate Button -->
+                    <TextView
+                        android:id="@+id/btnCalculate"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="CALCULATE ZAKAT"
+                        android:textColor="@color/gold"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button_calculate"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="10dp"/>
+
+                    <!-- Reset Button -->
+                    <TextView
+                        android:id="@+id/btnReset"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:text="Reset"
+                        android:textColor="@color/navyDark"
+                        android:textSize="14sp"
+                        android:background="@drawable/button_reset"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Result Card with Gold Coin Image -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Result Header with gold coin icon -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/gold"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvResultLabel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Calculation Result"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+
+                        <!-- Gold coin icon on result header -->
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_gold_coin"
+                            android:scaleType="fitCenter"/>
+                    </LinearLayout>
+
+                    <!-- Total Gold Value -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="14dp"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Gold Value"
+                                android:textSize="12sp"
+                                android:textColor="@color/textMedium"/>
+
+                            <TextView
+                                android:id="@+id/tvTotalValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="—"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/navyDark"
+                                android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Zakat Payable Value -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="14dp"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Zakat Payable Value"
+                                android:textSize="12sp"
+                                android:textColor="@color/textMedium"/>
+
+                            <TextView
+                                android:id="@+id/tvZakatPayable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="—"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/navyDark"
+                                android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Total Zakat Highlight with coins image -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/result_card"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL ZAKAT PAYABLE"
+                                android:textSize="11sp"
+                                android:textColor="@color/navyMid"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.1"/>
+
+                            <TextView
+                                android:id="@+id/tvTotalZakat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="—"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/gold"
+                                android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+
+                        <!-- Gold coins image beside total zakat -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_hands_gold"
+                            android:scaleType="fitCenter"
+                            android:alpha="0.85"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Footer note -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Zakat rate: 2.5% of payable gold value"
+                android:textSize="11sp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

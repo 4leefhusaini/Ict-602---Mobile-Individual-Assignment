@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navyDark"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        app:theme="@style/WhiteToolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <!-- Hero Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="@color/navyDark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gold Zakat"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calculator"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/gold"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Version 1.0.0   ·   ICT602"
+                        android:textSize="12sp"
+                        android:textColor="#99FFFFFF"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- About App Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/gold"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About This App"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A simple and accurate tool to help Muslims calculate their zakat obligation on gold. Supports both gold kept for savings (nisab 85g) and gold worn as jewellery (nisab 200g), following Islamic guidelines."
+                        android:textSize="13sp"
+                        android:textColor="@color/textMedium"
+                        android:lineSpacingExtra="4dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Developer Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/gold"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Developer Details"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <!-- Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="12sp"
+                            android:textColor="@color/textMedium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muhammad Alif Husaini bin Suhairi"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <!-- Student No -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Student No"
+                            android:textSize="12sp"
+                            android:textColor="@color/textMedium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2024973967"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <!-- Group -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="12dp"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Group"
+                            android:textSize="12sp"
+                            android:textColor="@color/textMedium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RCDCS2405B"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <!-- Programme -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/creamDark"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Programme"
+                            android:textSize="12sp"
+                            android:textColor="@color/textMedium"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CS 240"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- URL Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/gold"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Source Code"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/navyDark"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvAppUrl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="https://github.com/yourusername/ZakatGoldCalculator"
+                        android:textSize="13sp"
+                        android:textColor="@color/navyLight"
+                        android:background="?attr/selectableItemBackground"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to open project repository"
+                        android:textSize="11sp"
+                        android:textColor="@color/textHint"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Copyright -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="© 2026 Your Name. All rights reserved."
+                android:textSize="12sp"
+                android:textColor="@color/textHint"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

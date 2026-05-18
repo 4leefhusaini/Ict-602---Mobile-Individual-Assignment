@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ZakatGold" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/statusBar</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="WhiteToolbar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="Widget.MaterialComponents.PopupMenu">
+        <item name="android:textColor">@color/textDark</item>
+    </style>
+</resources>

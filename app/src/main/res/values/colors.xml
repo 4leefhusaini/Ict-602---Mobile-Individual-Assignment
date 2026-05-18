@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navy Blue & Cream Theme -->
+    <color name="colorPrimary">#0A1931</color>
+    <color name="colorPrimaryDark">#060F1E</color>
+    <color name="colorAccent">#C9A84C</color>
+
+    <!-- Navy shades -->
+    <color name="navyDark">#0A1931</color>
+    <color name="navyMid">#1A3A5C</color>
+    <color name="navyLight">#2E5D8E</color>
+
+    <!-- Cream & warm neutrals -->
+    <color name="cream">#FDF8F0</color>
+    <color name="creamDark">#F5EDD9</color>
+    <color name="creamBorder">#E8DCC8</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Gold accent -->
+    <color name="gold">#C9A84C</color>
+    <color name="goldLight">#F5E6B8</color>
+
+    <!-- Result -->
+    <color name="resultBackground">#EEF4FB</color>
+    <color name="background">#FDF8F0</color>
+
+    <!-- Text -->
+    <color name="textDark">#0A1931</color>
+    <color name="textMedium">#4A6080</color>
+    <color name="textHint">#A0B0C0</color>
+    <color name="colorLink">#1A3A5C</color>
+    <color name="colorGold">#C9A84C</color>
+
+    <!-- Status bar -->
+    <color name="statusBar">#060F1E</color>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="120"
+    android:viewportHeight="80">
+
+    <!-- Left hand palm -->
+    <path
+        android:fillColor="#F5C97A"
+        android:pathData="M10,60 Q8,50 12,44 Q16,38 22,40 L38,42 Q42,42 42,46 L42,68 Q42,72 38,72 L18,72 Q12,72 10,66 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M18,42 Q17,34 20,32 Q23,30 24,34 L24,42 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M24,40 Q23,32 26,30 Q29,28 30,32 L30,40 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M30,41 Q29,33 32,31 Q35,29 36,33 L36,41 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M36,43 Q35,36 38,35 Q41,34 41,38 L41,43 Z"/>
+
+    <!-- Right hand palm -->
+    <path
+        android:fillColor="#F5C97A"
+        android:pathData="M110,60 Q112,50 108,44 Q104,38 98,40 L82,42 Q78,42 78,46 L78,68 Q78,72 82,72 L102,72 Q108,72 110,66 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M102,42 Q103,34 100,32 Q97,30 96,34 L96,42 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M96,40 Q97,32 94,30 Q91,28 90,32 L90,40 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M90,41 Q91,33 88,31 Q85,29 84,33 L84,41 Z"/>
+    <path android:fillColor="#F5C97A" android:pathData="M84,43 Q85,36 82,35 Q79,34 79,38 L79,43 Z"/>
+
+    <!-- Coin bottom layer body -->
+    <path android:fillColor="#C9A84C" android:pathData="M38,50 Q38,44 60,44 Q82,44 82,50 L82,56 Q82,62 60,62 Q38,62 38,56 Z"/>
+    <path android:fillColor="#F5D57A" android:pathData="M38,50 Q38,44 60,44 Q82,44 82,50 Q82,56 60,56 Q38,56 38,50 Z"/>
+
+    <!-- Coin middle layer body -->
+    <path android:fillColor="#C9A84C" android:pathData="M40,40 Q40,34 60,34 Q80,34 80,40 L80,50 Q80,56 60,56 Q40,56 40,50 Z"/>
+    <path android:fillColor="#F5D57A" android:pathData="M40,40 Q40,34 60,34 Q80,34 80,40 Q80,46 60,46 Q40,46 40,40 Z"/>
+
+    <!-- Coin top layer body -->
+    <path android:fillColor="#C9A84C" android:pathData="M42,30 Q42,24 60,24 Q78,24 78,30 L78,40 Q78,46 60,46 Q42,46 42,40 Z"/>
+    <path android:fillColor="#FFE080" android:pathData="M42,30 Q42,24 60,24 Q78,24 78,30 Q78,36 60,36 Q42,36 42,30 Z"/>
+
+    <!-- Shine on top coin -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.35" android:pathData="M48,26 Q52,23 57,24 Q52,25 50,28 Z"/>
+
+    <!-- Crescent on coin -->
+    <path android:fillColor="#C9A84C" android:pathData="M57,27 Q53,28 53,30 Q53,32 57,33 Q54,32 54,30 Q54,28 57,27 Z"/>
+
+    <!-- Star on coin -->
+    <path android:fillColor="#C9A84C" android:pathData="M64,27 L65,29 L67,29 L66,31 L67,33 L64,32 L62,33 L63,31 L62,29 L64,29 Z"/>
+
+</vector>
