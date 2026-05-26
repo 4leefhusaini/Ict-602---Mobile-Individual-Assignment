@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:background="@color/cream">
 
-    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -15,7 +14,6 @@
         android:elevation="4dp"
         app:titleTextColor="@color/white"
         app:theme="@style/WhiteToolbar" />
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +25,7 @@
             android:orientation="vertical"
             android:paddingBottom="32dp">
 
-            <!-- Hero Header Card with Hands Holding Gold Image -->
+            <!-- Hero Header Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +44,6 @@
                     android:padding="20dp"
                     android:gravity="center_vertical">
 
-                    <!-- Text side -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -78,7 +75,6 @@
                             android:textColor="#99FFFFFF"/>
                     </LinearLayout>
 
-                    <!-- Hands holding gold image -->
                     <ImageView
                         android:layout_width="110dp"
                         android:layout_height="80dp"
@@ -167,6 +163,8 @@
                         android:textColor="@color/textHint"
                         android:layout_marginBottom="10dp"/>
 
+                    <!-- FIX: RadioButtons are now DIRECT children of RadioGroup -->
+                    <!-- The LinearLayout wrappers have been removed -->
                     <RadioGroup
                         android:id="@+id/rgGoldType"
                         android:layout_width="match_parent"
@@ -174,45 +172,32 @@
                         android:orientation="horizontal"
                         android:layout_marginBottom="18dp">
 
-                        <LinearLayout
+                        <RadioButton
+                            android:id="@+id/rbKeep"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:buttonTint="@color/navyDark"
+                            android:text="Keep"
+                            android:textColor="@color/textDark"
+                            android:textSize="14sp"
                             android:background="@drawable/radio_card"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
                             android:padding="10dp"
-                            android:layout_marginRight="6dp">
+                            android:layout_marginRight="6dp"/>
 
-                            <RadioButton
-                                android:id="@+id/rbKeep"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:buttonTint="@color/navyDark"
-                                android:text="Keep"
-                                android:textColor="@color/textDark"
-                                android:textSize="14sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout
+                        <RadioButton
+                            android:id="@+id/rbWear"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:buttonTint="@color/navyDark"
+                            android:text="Wear"
+                            android:textColor="@color/textDark"
+                            android:textSize="14sp"
                             android:background="@drawable/radio_card"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
                             android:padding="10dp"
-                            android:layout_marginLeft="6dp">
+                            android:layout_marginLeft="6dp"/>
 
-                            <RadioButton
-                                android:id="@+id/rbWear"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:buttonTint="@color/navyDark"
-                                android:text="Wear"
-                                android:textColor="@color/textDark"
-                                android:textSize="14sp"/>
-                        </LinearLayout>
                     </RadioGroup>
 
                     <!-- Gold Value -->
@@ -265,7 +250,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Result Card with Gold Coin Image -->
+            <!-- Result Card -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardResult"
                 android:layout_width="match_parent"
@@ -283,7 +268,7 @@
                     android:orientation="vertical"
                     android:padding="20dp">
 
-                    <!-- Result Header with gold coin icon -->
+                    <!-- Result Header -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -307,7 +292,6 @@
                             android:textStyle="bold"
                             android:textColor="@color/navyDark"/>
 
-                        <!-- Gold coin icon on result header -->
                         <ImageView
                             android:layout_width="36dp"
                             android:layout_height="36dp"
@@ -383,7 +367,7 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                    <!-- Total Zakat Highlight with coins image -->
+                    <!-- Total Zakat Highlight -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -418,7 +402,6 @@
                                 android:layout_marginTop="4dp"/>
                         </LinearLayout>
 
-                        <!-- Gold coins image beside total zakat -->
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
@@ -431,7 +414,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Footer note -->
+            <!-- Footer -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void shareApp() {
-        String appUrl = "https://github.com/yourusername/ZakatGoldCalculator";
+        String appUrl = "https://github.com/4leefhusaini/Ict-602---Mobile-Individual-Assignment";
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Gold Zakat Calculator App - ICT602");

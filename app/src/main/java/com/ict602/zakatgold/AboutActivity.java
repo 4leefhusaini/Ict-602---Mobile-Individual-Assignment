@@ -37,7 +37,7 @@ public class AboutActivity extends AppCompatActivity {
         tvUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/yourusername/ZakatGoldCalculator";
+                String url = "https://github.com/4leefhusaini/Ict-602---Mobile-Individual-Assignment";
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(browserIntent);
             }
